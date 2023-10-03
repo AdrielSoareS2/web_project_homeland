@@ -1,0 +1,21 @@
+@import url(../blocks/header.css);
+@import url(../blocks/intro.css);
+@import url(../blocks/gallery.css);
+@import url(../blocks/places.css);
+@import url(../blocks/city.css);
+@import url(../blocks/cover.css);
+@import url(../blocks/footer.css);
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+
+.page {
+    margin: 0 auto;
+    align-items: center;
+    font-family: "Inter";
+    background-color: #2A2C2F;
+    color: white;
+  }
+ 
