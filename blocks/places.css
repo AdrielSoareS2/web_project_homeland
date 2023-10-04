@@ -4,27 +4,28 @@
     margin-top: 92px;
 }
 .places__grid{
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 80px;
     max-width: 984px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5%;
     row-gap: 48px;
+    padding: 0 2%;
 }
 .places__title{
     max-width: 460px;
     font-size: 72px;
     font-style: normal;
     font-weight: 900;
-    line-height: 76px; /* 105.556% */
-    margin: 0;
+    line-height: 76px; 
+    margin: 0; 
 }
 .places__author-container{
     margin: 0;
-    display: block;
-    margin-top: 20%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 .places__author{
     max-width: 456px;
@@ -36,20 +37,39 @@
     line-height: normal;
     letter-spacing: 1.44px;
     text-transform: uppercase;
-
-
 }
 .places__subtitle{
     max-width: 456px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px; /* 122.222% */
+    line-height: 22px;
     margin: 0;
 }
+.places__title-gales{
+    max-width: 484px;
+    font-size: 69.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.places__title-eua{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.places__title-brasil{
+    max-width: 484px;
+    font-size: 69.5px; 
+}
+
 
 .places__image{
    max-width: 460px;
+}
+
+.places__image-brasil{
+    height: 460px;
 }
 .places__paragraph-contanier{
     grid-row-start: span 3;
@@ -62,13 +82,7 @@
     line-height: 163%; /* 29.34px */
     
 }
-.places__link-contanier{
-    margin-top: 48px;
-}
 .places__link{
-
-}
-.places__link-button{
     display: inline-flex;
     padding: 13px 20px;
     align-items: flex-start;
@@ -82,13 +96,16 @@
     line-height: normal;
     color: #FFF;
     margin: 0;
+    text-decoration: none;
+}
+
+.places__link:hover{
+    background: #0063D2;
 }
 
 @media screen and (max-width: 784px){
     .places{
-        
-    margin: 0;
-
+        margin: 0;
     }
     .places__text{
         font-size: 16px;
@@ -96,17 +113,27 @@
     .places__title{
         margin: 0;
         margin-top: 30%;
-    
         font-size: 50px;
         line-height: 46px;
         
     }
     .places__image{
-        max-width: 340px; 
+        max-width: 100%; 
+    }
+    .places__image-brasil{
+        height: 340px;
     }
 
 }
 
 @media screen and (max-width: 544px){
-
+    .places__grid{
+        display: block;
+    }
+    .places__image{
+       margin-top: 5%;
+    }
+    .places__image-brasil{
+        height: 320px;
+    }
 }
