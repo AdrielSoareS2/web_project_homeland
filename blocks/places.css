@@ -18,8 +18,8 @@
     font-size: 72px;
     font-style: normal;
     font-weight: 900;
-    line-height: 76px; 
-    margin: 0; 
+    line-height: 76px;
+    margin: 0;
 }
 .places__author-container{
     margin: 0;
@@ -79,7 +79,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 163%; /* 29.34px */
+    line-height: 163%;
     
 }
 .places__link{
@@ -118,7 +118,7 @@
         
     }
     .places__image{
-        max-width: 100%; 
+        max-width: 100%;
     }
     .places__image-brasil{
         height: 340px;
